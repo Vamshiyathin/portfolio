@@ -1,0 +1,143 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: rgb(14, 1, 1);
+    background-position: center;
+    background-size: cover;
+    color: rgb(248, 248, 241);    
+}
+#container{
+    padding:10px 10%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo{
+    width:140px;
+    
+}
+nav ul li{
+    display:inline-block;
+    list-style: none;
+    margin:30px 30px;
+    font-size: 25px;
+    font-style: normal;
+    cursor:pointer;
+    position:relative;
+}
+nav ul li a{
+    color:rgba(167, 152, 70, 0.692);
+    text-decoration: none;
+}
+nav ul li a::after{
+    content:'';
+    width:0;
+    height:3px;
+    background:rgb(138, 77, 77);
+    transition:0.5s;
+    bottom:-6px;
+    left:0;
+    position:absolute;
+}
+nav ul li a:hover::after{
+    width:100%;
+    
+}
+.section{
+    margin-top:10px;
+    display:flex;
+}
+.profile{
+    width:40%;
+    height:70%;
+    padding:2%;
+}
+.text-content{
+    margin-top:15%;
+    margin-left:10%;
+}
+.section-text{
+    font-size: 60px;
+    font-style: bold; 
+}
+
+.span{
+    color:rgba(167, 152, 70, 0.692);
+}
+/*------------------------------About---------------------------------------------*/
+#about{
+    padding: 5% 0;
+}
+.about{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+.section1{
+    flex-basis:35%;
+}
+.about_image{
+    width:100%;
+    border-radius:15px;
+}
+.section2{
+    flex-basis:60%;
+    padding-top:50px;
+    color: rgb(141, 141, 135);
+}
+.row_link{
+    display:flex;
+    margin: 20px 0 40px;
+    
+  
+}
+.tab-links{
+    margin-right:50px;
+    font-size:20px;
+    cursor:pointer;
+    position:relative;
+}
+.tab-links::after {
+    content:'';
+    width:0;
+    height:3px;
+    background:rgb(152, 69, 69);
+    position:absolute;
+    left:0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+    width:100%;
+}
+.tab_content ul li{
+    list-style: none;
+    font-size: 15px;
+    padding:5px 10px;
+}
+.tab_content ul li span{
+    color:rgb(221, 120, 125);
+    font-size:20px;
+}
+.tab_content{
+    display:none;
+}
+.tab_content.active-tab{
+    display:block;
+}
