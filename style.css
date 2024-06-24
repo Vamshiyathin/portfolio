@@ -1,8 +1,7 @@
 *{
     padding:0;
     margin:0;
-    box-sizing: border-box;
-    
+    box-sizing: border-box;   
 }
 html{
     scroll-behavior: smooth;
@@ -14,7 +13,7 @@ body{
     color: rgb(248, 248, 241);    
 }
 #container{
-    padding:10px 10%;
+    padding:20px;    
 }
 nav{
     display: flex;
@@ -23,8 +22,7 @@ nav{
     flex-wrap: wrap;
 }
 .logo{
-    width:140px;
-    
+    width:140px;   
 }
 nav ul li{
     display:inline-block;
@@ -50,8 +48,7 @@ nav ul li a::after{
     position:absolute;
 }
 nav ul li a:hover::after{
-    width:100%;
-    
+    width:100%;   
 }
 .section{
     margin-top:10px;
@@ -60,7 +57,8 @@ nav ul li a:hover::after{
 .profile{
     width:40%;
     height:70%;
-    padding:2%;
+    padding-right:25px;
+    border-radius: 25px;
 }
 .text-content{
     margin-top:15%;
@@ -70,11 +68,10 @@ nav ul li a:hover::after{
     font-size: 60px;
     font-style: bold; 
 }
-
 .span{
     color:rgba(167, 152, 70, 0.692);
 }
-/*------------------------------About---------------------------------------------*/
+/*--------------------------------About------------------------------------------------------------------------------------------------------*/
 #about{
     padding: 5% 0;
 }
@@ -83,10 +80,9 @@ nav ul li a:hover::after{
     margin-bottom: 10px;
 }
 .row{
-    display: flex;
+    display:flex;
     justify-content: space-between;
     flex-wrap: wrap;
-
 }
 .section1{
     flex-basis:35%;
@@ -102,9 +98,7 @@ nav ul li a:hover::after{
 }
 .row_link{
     display:flex;
-    margin: 20px 0 40px;
-    
-  
+    margin: 20px 0 40px; 
 }
 .tab-links{
     margin-right:50px;
@@ -116,13 +110,12 @@ nav ul li a:hover::after{
     content:'';
     width:0;
     height:3px;
-    background:rgb(152, 69, 69);
+    background:rgba(29, 231, 231, 0.904);
     position:absolute;
     left:0;
     bottom: -6px;
     transition: 0.5s;
 }
-
 .tab-links.active-link::after{
     width:100%;
 }
@@ -132,7 +125,7 @@ nav ul li a:hover::after{
     padding:5px 10px;
 }
 .tab_content ul li span{
-    color:rgb(221, 120, 125);
+    color:rgba(29, 231, 231, 0.904);
     font-size:20px;
 }
 .tab_content{
@@ -140,4 +133,200 @@ nav ul li a:hover::after{
 }
 .tab_content.active-tab{
     display:block;
+}
+/*--------------------------------skill-------------------------------------------------------------------------------------------------------------*/
+#skill{
+    padding:10px 10px;   
+}
+.skill-title{
+    text-align: center;
+    font-size: 40px;
+    color: rgb(141, 141, 135); 
+    margin-bottom:30px; 
+}
+.skill-items{ 
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;  
+    text-align:center;     
+}
+
+.skill-session1{
+    flex-basis:45%;          
+}
+.skill-session2{
+    flex-basis:45%;      
+}
+.style{     
+    text-align: right;
+    padding-top: 10px;
+    margin-bottom: 5px;
+    color:rgb(235, 226, 226);    
+}
+.skill-list1{
+    text-align: left;
+    box-sizing: border-box;
+    width:100%;
+    background-color:  rgb(141, 141, 135);
+}
+.css {
+    width:70%;
+    background-color: #04AA6D;
+    }
+.html{
+    width: 85%;
+    background-color: #04AA6D; 
+}
+.javascript{
+    width: 60%;
+    background-color: #04AA6D; 
+}
+.jenkins{
+    width: 80%;
+    background-color: #04AA6D; 
+}
+.adobexd{
+    width: 85%;
+    background-color: #04AA6D; 
+}
+.python{
+    width: 85%;
+    background-color: #04AA6D; 
+}
+.docker{
+    width: 70%;
+    background-color: #04AA6D; 
+}
+.kubernates{
+    width: 65%;
+    background-color: #04AA6D; 
+}
+.git{
+    width: 85%;
+    background-color: #04AA6D; 
+}
+.skill-items p{
+    text-align: left;
+    font-size: 18px;
+}
+.grid-items{  
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap:30px;
+    margin-top: 50px;
+}
+.item1{
+    background-color: rgba(156, 156, 148, 0.61);
+    padding:40px;
+    transition: backgroun-color 0.5s,trasform 0.5s;
+    border-radius:10px;
+}
+.item2{
+    background-color:  rgba(156, 156, 148, 0.61);
+    padding:40px;
+    transition: backgroun-color 0.5s,trasform 0.5s;
+    border-radius:10px;
+    
+}
+.item3{
+    background-color:  rgba(156, 156, 148, 0.61);
+    padding:40px;
+    transition: backgroun-color 0.5s,trasform 0.5s;
+    border-radius:10px;   
+}
+.item1:hover{
+    background-color:rgb(214, 66, 91);
+    transform:translatey(-15px);
+}
+.item2:hover{
+    background-color:rgb(214, 66, 91);
+    transform:translatey(-15px);
+}
+.item3:hover{
+    background-color:rgb(214, 66, 91);
+    transform:translatey(-15px);
+}
+/*--------------------------------------------------contact---------------------------------------------------------.-------*/
+#footer{
+    margin-top:30px;
+}
+
+.contact-info{
+    background-color:rgb(42, 43, 44);
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+   
+}
+.contact-info h1{
+    color:rgb(247, 247, 242);
+    margin: 1px  40px;   
+}
+.contact-info p{
+    color:rgb(247, 247, 242);
+    margin: 20px 40px;   
+}
+.contact-info i{
+    margin-right: 10px;
+}
+
+.social-icons{
+    font-size: 40px;
+    padding:10px 40px;
+    color:rgb(20, 19, 19);
+}
+.social-icons a{
+    text-decoration: none;
+    margin-right:10px;
+    color:rgb(247, 247, 242);
+    display:inline-block;
+    transition: transform 0.5s, color 0.5s;
+}
+.social-icons a:hover{
+   color:rgb(214, 66, 91);
+   transform:translatey(-6px);
+}
+.contact-icon{
+    flex-basis:35%;
+}
+.details-submission{
+    flex-basis:65%;
+}
+.btn{
+    padding:20px 40px;
+    
+}
+.btn a{
+    box-sizing: border-box;
+    background-color:rgb(214, 66, 91);
+    border:rgb(214, 66, 91),solid;
+    display:inline-block;
+    text-decoration: none;
+    font-size: 20px;
+    
+}
+.contact-submission form{
+    width:100%;
+}
+form input,form textarea{
+    width:100%;
+    background-color:rgba(78, 78, 76, 0.61);
+    color:rgb(240, 235, 235);
+    border:0;
+    font-size: 15px;
+    padding:10px;
+    margin: 15px 0;
+    border-radius: 6px;
+   
+}
+.submit-button{
+    padding:14px 60px;
+    font-size: 18px;
+    background-color:rgb(214, 66, 91);
+    border-radius: 6px;
+    border:0;
+    cursor:pointer;
+}
+form.button{
+    margin:10px 40px;
 }
