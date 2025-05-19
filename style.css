@@ -57,8 +57,8 @@ nav ul li a:hover::after{
 .profile{
     width:40%;
     height:70%;
-    padding-right:25px;
-    border-radius: 25px;
+    padding-right:4px;
+    border-radius: 50%;
 }
 .text-content{
     margin-top:15%;
@@ -89,7 +89,7 @@ nav ul li a:hover::after{
 }
 .about_image{
     width:100%;
-    border-radius:15px;
+    border-radius:50%;
 }
 .section2{
     flex-basis:60%;
@@ -303,6 +303,14 @@ nav ul li a:hover::after{
     display:inline-block;
     text-decoration: none;
     font-size: 20px;
+}
+.btn1 a{
+    box-sizing: border-box;
+    
+} 
+
+.contact-icon h1{
+    padding:10px;
     
 }
 .contact-submission form{
